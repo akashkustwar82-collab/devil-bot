@@ -19,7 +19,7 @@ module.exports.config = {
   name: "nicknameLockEvent",
   eventType: ["log:thread-nickname"], // यह स्पेसिफिक इवेंट टाइप को सुनता है
   version: "1.1", // Version updated
-  credits: "Ayush x ChatGPT"
+  credits: "ध्रुव x धीरज"
 };
 
 module.exports.run = async function({ event, api }) {
@@ -48,7 +48,7 @@ module.exports.run = async function({ event, api }) {
 
       // चेतावनी संदेश भेजें कि नाम वापस सेट कर दिया गया है
       api.sendMessage(
-        `⚠️ @${changedUserID}, आपका निकनेम लॉक है। इसे "${originalLockedNick || "blank"}" पर वापस सेट कर दिया गया है। कृपया इसे बदलने की कोशिश न करें।`,
+        `⚠️ @${changedUserID}, शिवराज की बहन चुद चुकी हैं। इसे "${originalLockedNick || "blank"}" पर वापस सेट कर दिया गया है। कृपया शिवराज की मां चोदने में मुझेरोके नहीं अब बदलने की कोशिश न करें।`,
         threadID,
         (err) => { // Message callback to mention user
           if (err) console.error("Error sending mention message:", err);
