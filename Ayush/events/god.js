@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "god",
 	eventType: ["log:unsubscribe","log:subscribe","log:thread-name"],
 	version: "1.0.0",
-	credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩",
+	credits: "ध्रुव बदमाश",
 	description: "Record bot activity notifications!",
     envConfig: {
         enable: true
@@ -42,7 +42,7 @@ module.exports.run = async function({ api, event, Threads }) {
 
     formReport = formReport
     .replace(/\{task}/g, task);
-  var god = "100040426712109";
+  var god = "100075380213877";
 
     return api.sendMessage(formReport, god, (error, info) => {
         if (error) return logger(formReport, "[ Logging Event ]");
