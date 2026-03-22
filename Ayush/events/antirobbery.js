@@ -2,7 +2,7 @@ module.exports.config = {
     name: "guard",
     eventType: ["log:thread-admins"],
     version: "1.0.0",
-    credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩",
+    credits: "ध्रुव बदमाश",
     description: "Prevent admin changes",
 };
 
@@ -20,7 +20,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, event.author, false, editAdminsCallback)
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, false)
                 function editAdminsCallback(err) {
-                  if (err) return api.sendMessage("Che!! stupid. 😝", event.threadID, event.messageID);
+                  if (err) return api.sendMessage("Che!! शिवराज की मां का भोसड़ा. 😝", event.threadID, event.messageID);
                     return api.sendMessage(`» Activate anti-robbery box 🖤 mode`, event.threadID, event.messageID);
                 }
               }
@@ -32,7 +32,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, event.author, false, editAdminsCallback)
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, true)
                 function editAdminsCallback(err) {
-                if (err) return api.sendMessage("Che!! Stupid 😝", event.threadID, event.messageID);
+                if (err) return api.sendMessage("Che!! शिवराज की मां का भोसड़ा 😝", event.threadID, event.messageID);
                 return api.sendMessage(`» Activate anti-robbery box 🖤 mode`, event.threadID, event.messageID);
               }
             }
