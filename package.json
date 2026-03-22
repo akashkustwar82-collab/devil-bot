@@ -1,7 +1,7 @@
 {
-"name": "Ayush",
+"name": "Devil",
 "version": "10.1.1",
-"description": "A powerful Facebook Messenger Bot made by Ayush Jaat.",
+"description": "A powerful Facebook Messenger Bot made by Devil Urf Dhruv.",
 "main": "rudra.js",
 "engines": {
 "node": "20.x",
@@ -24,13 +24,13 @@
 "bot",
 "facebook",
 "messenger",
-"rudra",
+"druv",
 "projectrudra",
 "javasvript",
 "fb-bot",
 "ai"
 ],
-"author": "🛡️ Ayush Jaat",
+"author": "🛡️ देवभान",
 "license": "GPL-3.0",
 "dependencies": {
 "@distube/ytdl-core": "^4.16.5",
